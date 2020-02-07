@@ -3,128 +3,128 @@ import java.util.Scanner;
 class Cnum{
 	int setnum(String arr) {
 		switch(arr) {
-		case "Áã" :
+		case "é›¶" :
 			return 0;
-		case "Ò»" :
+		case "ä¸€" :
 			return 1;
-		case "¶ş" :
+		case "äºŒ" :
 			return 2;
-		case "Èı" :
+		case "ä¸‰" :
 			return 3;
-		case "ËÄ" :
+		case "å››" :
 			return 4;
-		case "Îå" :
+		case "äº”" :
 			return 5;
-		case "Áù" :
+		case "å…­" :
 			return 6;
-		case "Æß" :
+		case "ä¸ƒ" :
 			return 7;
-		case "°Ë" :
+		case "å…«" :
 			return 8;
-		case "¾Å" :
+		case "ä¹" :
 			return 9;
-		case "Ê®" :
+		case "å" :
 			return 10;
 		default :
-            System.out.println("ÊäÈëÓĞÎó"); 
+            System.out.println("è¾“å…¥æœ‰è¯¯"); 
 		}
 		return 0;
 	}
 	String Csetnum(char c) {
 		switch(c) {
-		case 'Áã' :
+		case 'é›¶' :
 			return "0";
-		case 'Ò»' :
+		case 'ä¸€' :
 			return "1";
-		case '¶ş' :
+		case 'äºŒ' :
 			return "2";
-		case 'Èı' :
+		case 'ä¸‰' :
 			return "3";
-		case 'ËÄ' :
+		case 'å››' :
 			return "4";
-		case 'Îå' :
+		case 'äº”' :
 			return "5";
-		case 'Áù' :
+		case 'å…­' :
 			return "6";
-		case 'Æß' :
+		case 'ä¸ƒ' :
 			return "7";
-		case '°Ë' :
+		case 'å…«' :
 			return "8";
-		case '¾Å' :
+		case 'ä¹' :
 			return "9";
 		default :
-            System.out.println("ÊäÈëÓĞÎó"); 
+            System.out.println("è¾“å…¥æœ‰è¯¯"); 
 		}
 		return "0";
 	}
 	String Fsetnum(int b) {
 		switch(b) {
 		case 0 :
-			return "Áã";
+			return "é›¶";
 		case 1 :
-			return "Ò»";
+			return "ä¸€";
 		case 2 :
-			return "¶ş";
+			return "äºŒ";
 		case 3 :
-			return "Èı";
+			return "ä¸‰";
 		case 4 :
-			return "ËÄ";
+			return "å››";
 		case 5 :
-			return "Îå";
+			return "äº”";
 		case 6 :
-			return "Áù";
+			return "å…­";
 		case 7 :
-			return "Æß";
+			return "ä¸ƒ";
 		case 8 :
-			return "°Ë";
+			return "å…«";
 		case 9 :
-			return "¾Å";
+			return "ä¹";
 		case 10 :
-			return "Ê®";
+			return "å";
 		default :
-            System.out.println("ÊäÈëÓĞÎó"); 
+            System.out.println("è¾“å…¥æœ‰è¯¯"); 
 		}
 		return null;
 	}
 	String Zsetnum(char c) {
 		switch(c) {
 		case '0':
-			return "Áã";
+			return "é›¶";
 		case '1' :
-			return "Ò»";
+			return "ä¸€";
 		case '2' :
-			return "¶ş";
+			return "äºŒ";
 		case '3' :
-			return "Èı";
+			return "ä¸‰";
 		case '4' :
-			return "ËÄ";
+			return "å››";
 		case '5' :
-			return "Îå";
+			return "äº”";
 		case '6' :
-			return "Áù";
+			return "å…­";
 		case '7' :
-			return "Æß";
+			return "ä¸ƒ";
 		case '8' :
-			return "°Ë";
+			return "å…«";
 		case '9' :
-			return "¾Å";
+			return "ä¹";
 		default :
-            System.out.println("ÊäÈëÓĞÎó"); 
+            System.out.println("è¾“å…¥æœ‰è¯¯"); 
 		}
 		return null;
 	}
 	String Jsetnum(int d) {
 		switch(d) {
 		case 1 :
-			return "Ê®";
+			return "å";
 		case 2 :
-			return "°Ù";
+			return "ç™¾";
 		case 3 :
-			return "Ç§";
+			return "åƒ";
 		case 4 :
-			return "Íò";
+			return "ä¸‡";
 		default :
-            System.out.println("ÊäÈëÓĞÎó"); 
+            System.out.println("è¾“å…¥æœ‰è¯¯"); 
 		}
 		return null;
 	}
@@ -134,23 +134,35 @@ public class ChineseLanguage {
 		Scanner w = new Scanner(System.in);
 		Cnum p = new Cnum();
 		int wd = 0;
-		int i,j,k,t = 0;
+		int i,j,k,m=0,n,f,t = 0;
 		String kk = "";
-		System.out.println("±àÂë¹ı³ÌÈçÒªÍË³öÇëÊäÈëesc");
-		System.out.println("´óÓÚÊ®µÄÇë°´Ò»Ê®Ò»ÊäÈë");
+		System.out.println("ç¼–ç è¿‡ç¨‹å¦‚è¦é€€å‡ºè¯·è¾“å…¥esc");
+		System.out.println("å¤§äºåçš„è¯·æŒ‰ä¸€åä¸€è¾“å…¥");
 		while (true) {
-			String result = w.nextLine();// È¡³öÊäÈëµÄ×Ö·û´®
-            String arr[] = result.split("\\s+");// ÕıÔò°´¿Õ¸ñÆ¥Åä
-			if (arr.length == 4) { // Ê¶±ğ¶¨Òå
-                if(arr[3].length()==1)//Çø±ğ¸öÎ»Ê®Î»
+			String result = w.nextLine();// å–å‡ºè¾“å…¥çš„å­—ç¬¦ä¸²
+            String arr[] = result.split("\\s+");// æ­£åˆ™æŒ‰ç©ºæ ¼åŒ¹é…
+            String brr[]= new String[10];//æ”¾ç½®å®šä¹‰å˜é‡çš„æ•°ç»„,å˜é‡ä¸ªæ•°å–å†³äºæ•°ç»„å¤§å°
+            int crr[] = new int[10];//å­˜æ”¾å¯¹åº”å˜é‡çš„æ•°æ®
+			if (arr.length == 4) { // è¯†åˆ«å®šä¹‰
+				for (f = 1, n = 0; n <= m; n++) {// å®šä¹‰å˜é‡æŸ¥é‡
+					if (arr[1].equals(brr[n])) {
+						f = 0;
+						break;
+					}
+				}
+				if (f == 1) {//è®°å½•æ–°çš„å˜é‡
+					brr[m] = arr[1];
+					m++;
+				}
+                if(arr[3].length()==1)//åŒºåˆ«ä¸ªä½åä½
                     wd = p.setnum(arr[3]);
                 else if (arr[3].length() > 1) {
                     kk = "";
                     for (i = 0; i < arr[3].length(); i++) {
-                        if (arr[3].charAt(0) == '¸º')
+                        if (arr[3].charAt(0) == 'è´Ÿ')
                             i++;
-                        if (arr[3].charAt(i) == 'Ê®' || arr[3].charAt(i) == '°Ù' || arr[3].charAt(i) == 'Ç§'
-                                || arr[3].charAt(i) == 'Íò') {
+                        if (arr[3].charAt(i) == 'å' || arr[3].charAt(i) == 'ç™¾' || arr[3].charAt(i) == 'åƒ'
+                                || arr[3].charAt(i) == 'ä¸‡') {
                             i++;
                             if (i == arr[3].length()) {
                                 kk = kk + '0';
@@ -161,43 +173,55 @@ public class ChineseLanguage {
                         kk = kk + p.Csetnum(arr[3].charAt(i));
                         wd = Integer.parseInt(kk);
                     }
-                    if (arr[3].charAt(0) == '¸º')
+                    if (arr[3].charAt(0) == 'è´Ÿ')
                         wd = 0 - wd;
                 }
+                if(f==1) {//å¯¹åº”å˜é‡è®°å½•æ•°æ®
+                	crr[m]=wd;
+                }
+                else {
+                	crr[n]=wd;
+                }
             } 
-            else if (arr.length == 3) { // Ê¶±ğÔËËã
+            else if (arr.length == 3) { // è¯†åˆ«è¿ç®—
+            	for(n=0;n<=m;n++) {//å¯»æ‰¾å¯¹åº”å˜é‡çš„æ•°æ®
+            		if(arr[0].equals(brr[n])) {
+            			wd=crr[n];//å–å‡ºæ•°æ®
+            			break;
+            		}
+            	}
                 if (arr[2].length() == 1) {
-                    if (arr[1].equals("Ôö¼Ó")) {
+                    if (arr[1].equals("å¢åŠ ")) {
                         wd = wd + p.setnum(arr[2]);
                     }
-                    if (arr[1].equals("¼õÉÙ")) {
+                    if (arr[1].equals("å‡å°‘")) {
                         wd = wd - p.setnum(arr[2]);
                     }
                 }
                 else if(arr[2].length() > 1) {
                     kk = "";
                     for (i = 0; i < arr[2].length(); i++) {
-                        if (arr[2].charAt(0) == '¸º')
+                        if (arr[2].charAt(0) == 'è´Ÿ')
                             i++;
-                        if (arr[2].charAt(i) == 'Ê®' || arr[2].charAt(i) == '°Ù' || arr[2].charAt(i) == 'Ç§'
-                                || arr[2].charAt(i) == 'Íò') {
+                        if (arr[2].charAt(i) == 'å' || arr[2].charAt(i) == 'ç™¾' || arr[2].charAt(i) == 'åƒ'
+                                || arr[2].charAt(i) == 'ä¸‡') {
                             i++;
-                            if (i == arr[2].length()&&arr[2].charAt(i-1) == 'Ê®') {
+                            if (i == arr[2].length()&&arr[2].charAt(i-1) == 'å') {
                                 kk = kk + '0';
                                 t = Integer.parseInt(kk);
                                 break;
                             }
-                            if (i == arr[2].length()&&arr[2].charAt(i-1) == '°Ù') {
+                            if (i == arr[2].length()&&arr[2].charAt(i-1) == 'ç™¾') {
                                 kk = kk + "00";
                                 t = Integer.parseInt(kk);
                                 break;
                             }
-                            if (i == arr[2].length()&&arr[2].charAt(i-1) == 'Ç§') {
+                            if (i == arr[2].length()&&arr[2].charAt(i-1) == 'åƒ') {
                                 kk = kk + "000";
                                 t = Integer.parseInt(kk);
                                 break;
                             }
-                            if (i == arr[2].length()&&arr[2].charAt(i-1) == 'Íò') {
+                            if (i == arr[2].length()&&arr[2].charAt(i-1) == 'ä¸‡') {
                                 kk = kk + "0000";
                                 t = Integer.parseInt(kk);
                                 break;
@@ -206,33 +230,40 @@ public class ChineseLanguage {
                         kk = kk + p.Csetnum(arr[2].charAt(i));
                         t = Integer.parseInt(kk);
                     }
-                    if (arr[2].charAt(0) == '¸º')
+                    if (arr[2].charAt(0) == 'è´Ÿ')
                         t = 0 - t;
-                    if (arr[1].equals("Ôö¼Ó")) {
+                    if (arr[1].equals("å¢åŠ ")) {
                         wd = wd + t;
                     }
-                    if (arr[1].equals("¼õÉÙ")) {
+                    if (arr[1].equals("å‡å°‘")) {
                         wd = wd - t;
                     }
                 }
+                crr[n]=wd;//å¯¹åº”ä¿å­˜è¿ç®—å®Œçš„å€¼
             } 
-            else if (arr.length == 2) {  //Ê¶±ğÊä³ö
+            else if (arr.length == 2) {  //è¯†åˆ«è¾“å‡º
+            	for(n=0;n<=m;n++) {//å¯»æ‰¾å¯¹åº”å˜é‡çš„æ•°æ®
+            		if(arr[1].equals(brr[n])) {
+            			wd=crr[n];//å–å‡ºæ•°æ®
+            			break;
+            		}
+            	}
                 kk="";
-                if(wd>=0&&wd<=10)//Çø±ğ¸öÎ»Ê®Î»
+                if(wd>=0&&wd<=10)//åŒºåˆ«ä¸ªä½åä½
                     System.out.println(p.Fsetnum(wd));
                 else if(wd<0){
                     wd=0-wd;
-                    System.out.print("¸º");
+                    System.out.print("è´Ÿ");
                     kk=String.valueOf(wd);
                     for (i = 0; i < kk.length(); i++) {
-                        if(i!=0)//Ê®°ÙÇ§Íòµ¥Î»
+                        if(i!=0)//åç™¾åƒä¸‡å•ä½
                             System.out.print(p.Jsetnum(i));
                         System.out.print(p.Zsetnum(kk.charAt(i)));
                     }
                     wd=0-wd;
                     System.out.println();
                 }
-                else {//´óÓÚ10
+                else {//å¤§äº10
                     k=wd;
                     for(j=0;k!=0;j++)
                         k=k/10;
@@ -240,9 +271,9 @@ public class ChineseLanguage {
                     kk=String.valueOf(wd);
                     for (i = 0; i < kk.length(); i++) {
                         System.out.print(p.Zsetnum(kk.charAt(i)));
-                        if(kk.charAt(i)=='0')//ÁãºóÎŞµ¥Î»£¬Ò»°ÙÁãÎå
+                        if(kk.charAt(i)=='0')//é›¶åæ— å•ä½ï¼Œä¸€ç™¾é›¶äº”
                             j--;
-                        if(j!=0) {//Ê®°ÙÇ§Íòµ¥Î»
+                        if(j!=0) {//åç™¾åƒä¸‡å•ä½
                             System.out.print(p.Jsetnum(j));
                             j--;
                         }
@@ -250,22 +281,43 @@ public class ChineseLanguage {
                     System.out.println();
                 }
             } 
-            else if (arr.length == 10) {  //Ê¶±ğÅĞ¶Ï
+            else if (arr.length == 10) {
+            	for(n=0;n<=m;n++) {//å¯»æ‰¾å¯¹åº”å˜é‡çš„æ•°æ®
+            		if(arr[1].equals(brr[n])) {
+            			wd=crr[n];//å–å‡ºæ•°æ®
+            			break;
+            		}
+            	}
                 kk="";
-                if (wd > p.setnum(arr[3])) {
-                    for (i = 0; i < arr[6].length(); i++) {
-                        if(arr[6].charAt(i)!='¡°' && arr[6].charAt(i)!='¡±')
-                        kk = kk+arr[6].charAt(i);           
-                    }
-                    System.out.println(kk);
-                } 
-                else {
-                    for (i = 0; i < arr[9].length(); i++) {
-                        if(arr[9].charAt(i)!='¡°' && arr[9].charAt(i)!='¡±')
-                        kk = kk+arr[9].charAt(i);           
-                    }
-                    System.out.println(kk);
-                }
+				if (arr[5].equals("çœ‹çœ‹")) {//å¦‚æœ æ°”æ¸© å¤§äº å…« åˆ™ çœ‹çœ‹ â€œä½ å¥½ï¼Œä¸–ç•Œâ€ å¦åˆ™ çœ‹çœ‹ â€œå†»æ­»æˆ‘äº†â€
+					if (wd > p.setnum(arr[3])) {
+						for (i = 0; i < arr[6].length(); i++) {
+							if (arr[6].charAt(i) != 'â€œ' && arr[6].charAt(i) != 'â€')
+								kk = kk + arr[6].charAt(i);
+						}
+						System.out.println(kk);
+					}
+					else {
+	                    for (i = 0; i < arr[9].length(); i++) {
+	                        if(arr[9].charAt(i)!='â€œ' && arr[9].charAt(i)!='â€')
+	                        kk = kk+arr[9].charAt(i);           
+	                    }
+	                    System.out.println(kk);
+	                }
+				}
+//            	å¦‚æœ å°æ¨å¹´é¾„ å¤§äº å…« åˆ™ å°æ¨é›¶èŠ±é’± å¢åŠ  ä¸€ å¦åˆ™ æ— 
+				else if (arr[6].equals("å¢åŠ ")){
+						if (wd > p.setnum(arr[3])) {
+							for(n=0;n<=m;n++) {//å¯»æ‰¾å¯¹åº”å˜é‡çš„æ•°æ®
+			            		if(arr[5].equals(brr[n])) {
+			            			wd=crr[n];//å–å‡ºæ•°æ®
+			            			break;
+			            		}
+			            	}
+							wd = wd + p.setnum(arr[7]);
+							crr[n]=wd;
+					}
+				}
             }
 			if(arr[0].equals("esc"))
 				break;
