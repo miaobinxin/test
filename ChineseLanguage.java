@@ -135,14 +135,14 @@ public class ChineseLanguage {
 		Cnum p = new Cnum();
 		int wd = 0;
 		int i,j,k,m=0,n,f,t = 0;
+		String brr[]= new String[10];//放置定义变量的数组,变量个数取决于数组大小
+		int crr[] = new int[10];//存放对应变量的数据
 		String kk = "";
 		System.out.println("编码过程如要退出请输入esc");
 		System.out.println("大于十的请按一十一输入");
 		while (true) {
 			String result = w.nextLine();// 取出输入的字符串
             String arr[] = result.split("\\s+");// 正则按空格匹配
-            String brr[]= new String[10];//放置定义变量的数组,变量个数取决于数组大小
-            int crr[] = new int[10];//存放对应变量的数据
 			if (arr.length == 4) { // 识别定义
 				for (f = 1, n = 0; n <= m; n++) {// 定义变量查重
 					if (arr[1].equals(brr[n])) {
@@ -177,14 +177,14 @@ public class ChineseLanguage {
                         wd = 0 - wd;
                 }
                 if(f==1) {//对应变量记录数据
-                	crr[m]=wd;
+                	crr[m-1]=wd;
                 }
                 else {
                 	crr[n]=wd;
                 }
             } 
             else if (arr.length == 3) { // 识别运算
-            	for(n=0;n<=m;n++) {//寻找对应变量的数据
+            	for(n=0;n<m;n++) {//寻找对应变量的数据
             		if(arr[0].equals(brr[n])) {
             			wd=crr[n];//取出数据
             			break;
@@ -242,7 +242,7 @@ public class ChineseLanguage {
                 crr[n]=wd;//对应保存运算完的值
             } 
             else if (arr.length == 2) {  //识别输出
-            	for(n=0;n<=m;n++) {//寻找对应变量的数据
+            	for(n=0;n<m;n++) {//寻找对应变量的数据
             		if(arr[1].equals(brr[n])) {
             			wd=crr[n];//取出数据
             			break;
@@ -282,7 +282,7 @@ public class ChineseLanguage {
                 }
             } 
             else if (arr.length == 10) {
-            	for(n=0;n<=m;n++) {//寻找对应变量的数据
+            	for(n=0;n<m;n++) {//寻找对应变量的数据
             		if(arr[1].equals(brr[n])) {
             			wd=crr[n];//取出数据
             			break;
@@ -308,7 +308,7 @@ public class ChineseLanguage {
 //            	如果 小杨年龄 大于 八 则 小杨零花钱 增加 一 否则 无
 				else if (arr[6].equals("增加")){
 						if (wd > p.setnum(arr[3])) {
-							for(n=0;n<=m;n++) {//寻找对应变量的数据
+							for(n=0;n<m;n++) {//寻找对应变量的数据
 			            		if(arr[5].equals(brr[n])) {
 			            			wd=crr[n];//取出数据
 			            			break;
